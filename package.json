@@ -7,7 +7,7 @@
     "minimist": ">=1.2.3",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
-    "react-scripts": "3.2.0",
+    "react-scripts": "^4.0.3",
     "serialize-javascript": ">=2.1.1"
   },
   "scripts": {
@@ -40,5 +40,18 @@
     "stylelint": "^13.8.0",
     "stylelint-config-standard": "^20.0.0",
     "stylelint-order": "^4.1.0"
-  }
+  },
+  "description": "Ao iniciar este projeto, você concorda com as diretrizes do Código de Ética e Conduta e do Manual da Pessoa Estudante da Trybe.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tryber/sd-015-b-project-movie-cards-library.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tryber/sd-015-b-project-movie-cards-library/issues"
+  },
+  "homepage": "https://github.com/tryber/sd-015-b-project-movie-cards-library#readme"
 }
