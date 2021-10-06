@@ -10,7 +10,7 @@ export default class MovieCard extends React.Component {
         <h5>{movie.subtitle}</h5>
         <img src={movie.imagePath}></img>
         <p>{movie.storyline}</p>
-        <Rating rating={movie.rating}/>
+        <Rating rating={movie.rating} />
       </section>
     );
   }
