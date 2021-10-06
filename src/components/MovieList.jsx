@@ -5,9 +5,13 @@ import MovieCard from './MovieCard';
 class MovieList extends React.Component {
   render() {
     const { movies } = this.props;
-    const allMovies = movies.map((movie) => <MovieCard key={ movie.title } />);
+    const allMovies = movies.map((mov) => <MovieCard movie={ mov } key={ mov.title } />);
 
-    return allMovies;
+    return (
+      <section className="movie-list">
+        {allMovies}
+      </section>
+    );
   }
 }
 
