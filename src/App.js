@@ -8,6 +8,6 @@ function App() {
       Hora de codar! 🚀✍️👨‍💻👩‍💻💪
     </div>
   );
-}
+}..
 
 export default App;
