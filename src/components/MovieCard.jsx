@@ -1,14 +1,21 @@
 // implement MovieCard component here
-/* import React from 'react';
-import movies from './data';
+import React from 'react';
+import movies from '../data';
+
 
 class MovieCard extends React.Component {
   render() {
+    const { movies } = this.props;
     return (
-        <ul>{movies.map((movie) => movie)}</ul>
+        <div>
+        <h4>{movies.title}</h4>
+        <h5>{movies.subtitle}</h5>
+        <p>{movies.storyline}</p>
+        `rating: ${movies.rating}`,
+        `imagePath: ${movies.imagePath}`,
+        </div>
     );
   }
 }
 
 export default MovieCard;
- */
