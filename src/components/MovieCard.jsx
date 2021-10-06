@@ -1,13 +1,11 @@
 import React, { Component } from 'react';
 
 class MovieCard extends Component {
-  render(){
+  render() {
     return (
-      <h1>MovieCards Render</h1>
+      <h1>Ola</h1>
     );
-
   }
 }
-
 
 export default MovieCard;
