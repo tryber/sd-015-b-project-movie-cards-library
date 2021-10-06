@@ -7,7 +7,8 @@ class MovieCard extends React.Component {
   render() {
     const movie = this.props.movie;
     return (
-    <div>
+    <div className="movie-card">
+      
     </div>
     )
   }
