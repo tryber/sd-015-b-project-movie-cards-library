@@ -13,7 +13,6 @@ body {
 }
 
 .page-title {
-  background-color: grey;
   color: #f8f9fa;
   font-size: 28px;
   font-weight: 500;
@@ -22,8 +21,11 @@ body {
 
 .movie-list {
   display: flex;
+  justify-content: center;
+  width: 1000px;
   flex-flow: row wrap;
   padding: 48px 30px;
+  margin: auto;
 }
 
 .movie-card {
@@ -33,9 +35,11 @@ body {
   display: flex;
   flex-direction: column;
   height: 450px;
-  margin: 5px;
+  margin: 10px;
   overflow: hidden;
   width: 300px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px;
 }
 
 
