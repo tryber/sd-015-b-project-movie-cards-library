@@ -1,8 +1,8 @@
-import react from 'react';
+import React from 'react';
 
-class MovieCard extends react.Component {
+class MovieCard extends React.Component {
   render() {
-
+    return <p />;
   }
 }
 
