@@ -265,7 +265,7 @@ Criar um componente que represente o cabeçalho da página.
 
 **O que será verificado:**
 
-  - Renderize o componente `<Header />`.
+  - Renderize o componente `<Header />`. 
 
 ### 2 - Renderize um texto no `<Header />`
 
