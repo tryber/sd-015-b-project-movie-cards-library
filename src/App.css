@@ -22,13 +22,14 @@ body {
 .movie-list {
   display: flex;
   flex-flow: row wrap;
+  justify-content: space-around;
   padding: 48px 30px;
 }
 
 .movie-card {
   background-color: white;
   border: 1px solid rgba(0, 0, 0, 0.125);
-  border-radius: 3px;
+  border-radius: 15px;
   display: flex;
   flex-direction: column;
   height: 450px;
