@@ -12,6 +12,11 @@ body {
   justify-content: center;
 }
 
+.movie-card-header span {
+  font-size: 25px;
+  margin-left: 30px;
+}
+
 .page-title {
   color: #f8f9fa;
   font-size: 28px;
@@ -47,7 +52,7 @@ body {
   padding: 20px;
 }
 
-.movie-card-title {
+.movie-card-tile {
   font-size: 24px;
   font-weight: 500;
   margin: 0 0 12px;
