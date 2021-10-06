@@ -7,7 +7,7 @@ class Rating extends React.Component {
     return (
       <div>
         <h4>Rating</h4>
-        <p>{rating}</p>
+        <p className="rating">{rating}</p>
       </div>
     );
   }
