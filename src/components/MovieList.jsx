@@ -8,7 +8,6 @@ function MovieList({ movies }) {
     <div className="movie-list">
       {movies.map((movie) => {
         const { title } = movie;
-        console.log(title);
         return <MovieCard movie={ movie } key={ title } />;
       })}
     </div>
