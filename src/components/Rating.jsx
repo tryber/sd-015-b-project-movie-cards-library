@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 class Rating extends React.Component {
   render() {
     const { rating } = this.props;
-    return <p>{ rating }</p>;
+    return <h6 className="rating">{ rating }</h6>;
   }
 }
 
