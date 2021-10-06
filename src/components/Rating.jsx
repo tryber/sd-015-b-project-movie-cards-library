@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 
 class Rating extends Component {
-    render() {
-        return <h1>ola, mundo</h1>
-    }
+  render() {
+    const { rating } = this.props;
+    return <p className="rating">{ rating }</p>
+  }
 }
 
 export default Rating;
