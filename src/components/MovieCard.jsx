@@ -33,4 +33,4 @@ MovieCard.defaultProps = {
   movie: PropTypes.shape({
     rating: 0,
   }),
-}
+};
