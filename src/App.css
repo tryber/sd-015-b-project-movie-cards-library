@@ -21,25 +21,24 @@ body {
 
 .movie-list {
   display: flex;
-  justify-content: center;
-  width: 1000px;
   flex-flow: row wrap;
-  padding: 48px 30px;
+  justify-content: center;
   margin: auto;
+  padding: 48px 30px;
+  width: 1000px;
 }
 
 .movie-card {
   background-color: white;
   border: 1px solid rgba(0, 0, 0, 0.125);
-  border-radius: 3px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px;
   display: flex;
   flex-direction: column;
   height: 450px;
   margin: 10px;
   overflow: hidden;
   width: 300px;
-  border-radius: 10px;
-  box-shadow: 5px 5px 10px;
 }
 
 
