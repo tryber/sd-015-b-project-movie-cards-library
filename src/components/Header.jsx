@@ -1,8 +1,12 @@
 // implement Header component here
-import { Component } from 'react';
+import React from 'react';
 
-export default class Header extends Component {
+export default class Header extends React.Component {
   render() {
-    return null;
+    return (
+      <header>
+        <h1>Movie Cards Library</h1>
+      </header>
+    );
   }
 }
