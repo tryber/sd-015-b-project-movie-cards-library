@@ -1,1 +1,20 @@
-// implement MovieCard component here
+import React from 'react';
+import PropTypes from 'prop-types';
+
+class MovieCard extends React.Component {
+  render() {
+    const { movie } = this.props;
+    return (
+      <h1>{ movie.title }</h1>
+    );
+  }
+}
+
+MovieCard.propTypes = {
+  movie: PropTypes.shape({ // shape usado pra detalhar o objeto
+    title: PropTypes.string, // o formato do titulo é string/texto
+    // só coloca o que vai usar - minimalismo! =)
+  }).isRequired,
+};
+
+export default MovieCard;
