@@ -16,19 +16,7 @@ class MovieList extends Component {
 }
 
 MovieList.propTypes = {
-  movies: PropTypes.arrayOf(PropTypes.object),
-};
-
-MovieList.defaultProps = {
-  movies: [
-    {
-      title: 'Final Fantasy',
-      subtitle: 'Spirits Within',
-      storyline: 'A scientist makes a last stand on Earth.',
-      rating: 4.5,
-      imagePath: 'images/Final_Fantasy_Spirits_Within.jpg',
-    },
-  ],
+  movies: PropTypes.arrayOf(PropTypes.object).isRequired,
 };
 
 export default MovieList;
