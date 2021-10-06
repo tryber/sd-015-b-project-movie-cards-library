@@ -1,13 +1,19 @@
-import React from "react";
+import React, { Component } from "react";
+import MovieCard from "./MovieCard";
+import movies from "../data";
 
-class Movies extends React.Component {
-    render() {
-        return (
-            <main>
-                <h2>Ola, mundo!</h2>
-            </main>
-        )
-    }
+class MovieList extends Component {
+  render() {
+  	return (
+    	<main>
+        {
+          movies.map((elemento) => {
+            return <MovieCard filmes={ elemento } />
+          })
+        }
+      </main>
+    );
+  }
 }
 
-export default Movies;
+export default MovieList;
