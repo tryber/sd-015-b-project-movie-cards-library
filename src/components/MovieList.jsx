@@ -6,7 +6,7 @@ export default class MovieList extends React.Component {
   render() {
     const { movies } = this.props;
     return (
-      movies.map((movie, index) => <MovieCard key={ index } movie={ movie } />)
+      movies.map((movie, index) => <MovieCard key={ movie.title } movie={ movie } />)
     );
   }
 }
