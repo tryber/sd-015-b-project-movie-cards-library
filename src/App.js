@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from './components/Header';
-import Filmes from './components/MovieList';
 import movies from './data';
+import MovieList from './components/MovieList';
 import './App.css';
 
 function App() {
@@ -10,7 +10,7 @@ function App() {
       <div className="App">
         <Header />
       </div>
-      {/* <Filmes/> */}
+      <MovieList movies={ movies } />
       <div />
 
     </>
