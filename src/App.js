@@ -1,10 +1,14 @@
 import React from 'react';
 import './App.css';
 import Header from './components/Header';
+import Movielist from './components/MovieList';
 
 function App() {
   return (
-    <Header />
+    <div>
+      <Header />
+      <Movielist />
+    </div>
   );
 }
 export default App;
