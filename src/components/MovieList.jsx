@@ -7,7 +7,11 @@ function MovieList({ movies }) {
   const moviesList = movies;
   return (
     <div className="movie-list">
-      {moviesList.map((movie) => <MovieCard movie={ movie } key={ movie.title } />)}
+      {moviesList.map((movie) => {
+        const { title } = movie;
+        console.log(title);
+        return <MovieCard movie={ movie } key={ title } />;
+      })}
     </div>
   );
 }

@@ -8,8 +8,7 @@ import Rating from './Rating';
 //   lastName: PropTypes.string,
 // };
 
-function MovieCard({ movie, key }) {
-  console.log(key);
+function MovieCard({ movie }) {
   return (
     <div className="movie-card">
       <img src={ movie.imagePath } alt={ movie.title } className="movie-card-image" />
@@ -31,11 +30,6 @@ MovieCard.propTypes = {
     rating: PropTypes.number,
     imagePath: PropTypes.string,
   }).isRequired,
-  key: PropTypes.string,
-};
-
-MovieCard.defaultProps = {
-  key: 'MovieTitle',
 };
 
 export default MovieCard;
