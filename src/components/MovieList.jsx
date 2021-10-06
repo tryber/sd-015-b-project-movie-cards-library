@@ -9,7 +9,7 @@ class MovieList extends Component {
     const mappedMovies = movies.map(actualMovie);
 
     return (
-      <div>
+      <div className="movie-list">
         {mappedMovies}
       </div>
     );
