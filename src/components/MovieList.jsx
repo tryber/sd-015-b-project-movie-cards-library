@@ -1,6 +1,7 @@
 // implement MovieList component here
 import React from 'react';
 import PropTypes from 'prop-types';
+import { v4 as generateId } from 'uuid';
 import MovieCard from './MovieCard';
 
 class MovieList extends React.Component {
@@ -8,8 +9,8 @@ class MovieList extends React.Component {
     const { movies } = this.props;
 
     return (
-      <div>
-        {movies.map((movie) => <MovieCard key={ movie.title } movie={ movie } />)}
+      <div className="movie-list ">
+        {movies.map((movie) => <MovieCard key={ generateId() } movie={ movie } />)}
       </div>
     );
   }
