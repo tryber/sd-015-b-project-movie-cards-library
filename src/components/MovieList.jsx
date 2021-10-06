@@ -16,10 +16,16 @@ class MovieList extends React.Component {
     );
   }
 }
+const expectedObject = {
+  title: PropTypes.string.isRequired,
+  subtitle: PropTypes.string.isRequired,
+  storyline: PropTypes.string.isRequired,
+  rating: PropTypes.number,
+  imagePath: PropTypes.string.isRequired,
+};
+
 MovieList.propTypes = {
-  movies: PropTypes.shape({
-    map: PropTypes.func,
-  }).isRequired,
+  movies: PropTypes.arrayOf(PropTypes.shape(expectedObject)).isRequired,
 };
 
 export default MovieList;

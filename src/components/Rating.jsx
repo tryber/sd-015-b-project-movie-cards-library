@@ -16,7 +16,7 @@ Rating.propTypes = {
 };
 
 Rating.defaultProps = {
-  rating: 'Stranger',
+  rating: 0,
 };
 
 export default Rating;
