@@ -1,19 +1,28 @@
 import React from 'react';
-
-// const movie = {
-//   title: 'Kingsglaive',
-//   subtitle: 'Final Fantasy XV',
-//   storyline: 'King Regis',
-//   rating: 4.5,
-//   imagePath: 'images/Kingsglaive_Final_Fantasy_XV.jpg',
-// };
+import PropTypes from 'prop-types';
 
 class MovieCard extends React.Component {
   render() {
+    const { movie } = this.props;
     return (
-      'ola'
+      <div className="movie-card">
+        <img className="movie-card-image" src={ movie.imagePath } alt={ movie.title } />
+        <h4 className="movie-card-title">{movie.title}</h4>
+        <h5 className="movie-card-subtitle">{movie.subtitle}</h5>
+        <p className="movie-card-storyline">{movie.storyline}</p>
+        {/* <Rating /> */}
+      </div>
     );
   }
 }
+
+MovieCard.propTypes = {
+  movie: PropTypes.shape({
+    imagePath: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired,
+    subtitle: PropTypes.string.isRequired,
+    storyline: PropTypes.string.isRequired,
+  })
+};
 
 export default MovieCard;
