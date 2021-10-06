@@ -5,7 +5,9 @@ import MovieCard from './MovieCard';
 
 class MovieList extends React.Component {
   render() {
-  <MovieCard movie={movies.title} />
+    return (
+      <MovieCard movie={ movies.title } />
+    );
   }
 }
 
