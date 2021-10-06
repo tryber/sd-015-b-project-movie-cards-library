@@ -11,7 +11,7 @@ class MovieList extends React.Component {
         <section>
           { movies.map((filme) => (<MovieCard
             key={ filme.title }
-            film={ filme }
+            movie={ filme }
           />))}
         </section>
       </div>
