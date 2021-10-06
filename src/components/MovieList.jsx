@@ -6,7 +6,7 @@ class MovieList extends React.Component {
     const { movies } = this.props;
     console.log(movies);
     return (
-      movies.map((movie) => <MovieCards movie={ movie } />)
+      movies.map((movie) => <MovieCards movie={ movie } key={ movie.title } />)
     );
   }
 }
