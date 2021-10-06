@@ -4,10 +4,10 @@ import Moviecard from './MovieCard';
 
 class Movielist extends Component {
   render() {
-      const { movies } = this.props
+    const { movies } = this.props;
     return (
       <section>
-        {movies.map((movie) => <Moviecard key ={ movie.title } movies={ movie }/>)}
+        {movies.map((movie) => <Moviecard key={ movie.title } movies={ movie } />)}
       </section>
     );
   }
@@ -20,7 +20,7 @@ Movielist.propTypes = {
   }).isRequired),
 };
 Movielist.defaultProps = {
-    movies: [],
+  movies: [],
 };
 
 export default Movielist;
