@@ -81,3 +81,9 @@ body {
   justify-content: flex-end;
   padding: 12px 20px;
 }
+
+header {
+  background-color: #343a40;
+  height: 70px;
+  width: 100%;
+}
