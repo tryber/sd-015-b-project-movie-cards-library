@@ -3,11 +3,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Rating from './Rating';
 
-// Greeting.propTypes = {
-//   name: PropTypes.string,
-//   lastName: PropTypes.string,
-// };
-
 function MovieCard({ movie }) {
   return (
     <div className="movie-card">
