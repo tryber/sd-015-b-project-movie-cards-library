@@ -6,7 +6,12 @@ export default class MovieCard extends React.Component {
   render() {
     const { movie } = this.props;
     const { title, imagePath } = movie;
-    return <img src={ imagePath } alt={ `${title} movie` } />;
+    return (
+      <div className="movie-card">
+        <img src={ imagePath } alt={ `${title} movie` } />
+        <h4>{ title }</h4>
+      </div>
+    );
   }
 }
 
