@@ -1,10 +1,11 @@
 // implement MovieList component here
 import React from 'react';
+import PropTypes from 'prop-types';
 import MovieCard from './MovieCard';
-import movies from '../data';
 
 class MovieList extends React.Component {
   render() {
+    const { movies } = this.props;
     return (
       <div>
         <section>
@@ -17,5 +18,9 @@ class MovieList extends React.Component {
     );
   }
 }
+
+MovieList.propTypes = {
+  movies: PropTypes.arrayOf(PropTypes.objects).isRequired,
+};
 
 export default MovieList;
