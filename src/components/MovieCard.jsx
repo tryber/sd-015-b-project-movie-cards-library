@@ -4,7 +4,13 @@ class MovieCard extends Component {
   render() {
     const { title, subtitle, storyline, rating, imagePath } = this.props.movie;
     return (
-      <div>Teste</div>
+      <div>
+        <p>title: {title}</p>
+        <p>subtitle: {subtitle}</p>
+        <p>storyline: {storyline}</p>
+        <p>rating: {rating}</p>
+        <p>imagePath: {imagePath}</p>
+      </div>
     );
   }
 }
