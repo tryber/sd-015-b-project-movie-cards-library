@@ -22,6 +22,7 @@ body {
 .movie-list {
   display: flex;
   flex-flow: row wrap;
+  justify-content: center;
   padding: 48px 30px;
 }
 
@@ -29,10 +30,12 @@ body {
   background-color: white;
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 3px;
+  min-width: 350px;
+  max-width: 350px;
+  height: 450px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  height: 450px;
   margin: 5px;
   overflow: hidden;
   width: 300px;
@@ -67,8 +70,8 @@ body {
 }
 
 .rating-txt {
-  font-weight: 600;
   color: #00438b;
+  font-weight: 600;
 }
 
 .rating {
