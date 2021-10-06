@@ -6,8 +6,8 @@ class Rating extends React.Component {
       <div>
         <p>teste</p>
       </div>
-    )
+    );
   }
 }
 
-export default Rating
+export default Rating;
