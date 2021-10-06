@@ -1,14 +1,12 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 
 class Movielist extends Component {
-    render() {
-        const movies = this.props.movies
+  render() {
     return(
-        <article>
-
-        </article>
-    )
-    }
-}
+      <article>
+      </article>
+    );
+  }
+};
 
 export default Movielist;
