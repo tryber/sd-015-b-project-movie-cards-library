@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
+import MovieCard from './MovieCard';
 
 class MovieList extends Component {
   render() {
     return (
-      <header>
-        <h1>Movie Cards Library</h1>
-      </header>
-    );
+      this.props.movies.map(movie => (
+        <MovieCard movie={ movie } />
+      ));
+    )
   }
 }
 
