@@ -31,6 +31,7 @@ body {
   border-radius: 3px;
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
   height: 450px;
   margin: 5px;
   overflow: hidden;
@@ -38,7 +39,7 @@ body {
 }
 
 
-.movie-card-image {
+.card-img {
   width: 100%;
 }
 
@@ -65,6 +66,11 @@ body {
   text-align: justify;
 }
 
+.rating-txt {
+  font-weight: 600;
+  color: #00438b;
+}
+
 .rating {
   background-color: #007bff;
   border-radius: 25px;
@@ -78,6 +84,6 @@ body {
   background-color: rgba(0, 0, 0, 0.03);
   border-top: 1px solid rgba(0, 0, 0, 0.125);
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   padding: 12px 20px;
 }
