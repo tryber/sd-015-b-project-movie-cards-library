@@ -1,4 +1,5 @@
 import React from 'react';
+import '../App.css';
 import movies from '../data';
 import MovieCard from './MovieCard';
 
