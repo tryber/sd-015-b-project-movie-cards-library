@@ -54,8 +54,8 @@ body {
 
 .movie-card-storyline {
   font-size: 14px;
-  text-align: justify;
   height: 85px;
+  text-align: justify;
 }
 
 .rating {
