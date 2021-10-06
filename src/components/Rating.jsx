@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 class Rating extends React.Component {
   render() {
@@ -6,7 +6,7 @@ class Rating extends React.Component {
     console.log(rating);
     return (
       <div>
-        <p className='rating' >{ rating }</p>
+        <p className="rating">{ rating }</p>
       </div>
     );
   }
