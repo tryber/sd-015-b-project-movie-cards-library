@@ -1,7 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 
-import App from '../App';
+import App from '../App.tsx';
 
 describe('15 - Crie um componente `<App />`', () => {
   let wrapper;

@@ -1,0 +1,31 @@
+.card {
+  display: flex;
+  flex-direction: column;
+
+  img {
+    width: 400px;
+  }
+
+  .card-details {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+
+    h4 {
+      font-size: 32px;
+      line-height: 0;
+    }
+
+    h5 {
+      font-size: 24px;
+      line-height: 0;
+      color: #59626a;
+    }
+
+    p {
+      width: 380px;
+      text-align: justify;
+      height: 100px;
+    }
+  }
+}

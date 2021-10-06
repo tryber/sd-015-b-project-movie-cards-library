@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import MovieCard from '../components/MovieCard';
+import { MovieCard } from '../components/MovieCard/index.tsx';
 
 const movies = [
   {
