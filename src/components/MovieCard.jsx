@@ -6,10 +6,10 @@ class MovieCard extends Component {
     const { movie } = this.props;
     return (
       <section>
-        <h2>{ movie.title }</h2>
+        <h4>{ movie.title }</h4>
         <img src={ movie.imagePath } alt={ movie.imagePath } />
         <div>
-          <h3>{ movie.subtitle }</h3>
+          <h5>{ movie.subtitle }</h5>
           <p>{ movie.storyline }</p>
         </div>
         <div>
