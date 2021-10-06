@@ -28,17 +28,7 @@ MovieCard.propTypes = {
     storyline: PropTypes.string,
     rating: PropTypes.number,
     imagePath: PropTypes.string,
-  }),
-};
-
-MovieCard.defaultProps = {
-  movie: {
-    title: 'Final Fantasy',
-    subtitle: 'Spirits Within',
-    storyline: 'A scientist makes a last stand on Earth.',
-    rating: 4.5,
-    imagePath: 'images/Final_Fantasy_Spirits_Within.jpg',
-  },
+  }).isRequired,
 };
 
 export default MovieCard;
