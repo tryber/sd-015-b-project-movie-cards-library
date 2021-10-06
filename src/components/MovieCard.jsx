@@ -25,6 +25,12 @@ MovieCard.propTypes = {
     title: PropTypes.string.isRequired,
     storyline: PropTypes.string.isRequired,
     subtitle: PropTypes.string.isRequired,
-    rating: PropTypes.number.isRequired,
-  }).isRequired,
+    rating: PropTypes.number,
+  }),
 };
+
+MovieCard.defaultProps = {
+  movie: PropTypes.shape({
+    rating: 0,
+  }),
+}
