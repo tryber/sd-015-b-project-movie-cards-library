@@ -4,8 +4,6 @@ import Header from './components/Header';
 import MovieList from './components/MovieList'
 import movies from './data.js'
 
-console.log(movies)
-
 function App() {
   return (
     <div className="App">
