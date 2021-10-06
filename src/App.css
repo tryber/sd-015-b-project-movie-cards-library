@@ -4,18 +4,18 @@
 }
 
 .App {
+  font-size: 16px;
   box-sizing: border-box;
   max-width: 100%;
-  font-size: 16px;
 }
 
 header {
   background-color: rgb(212, 212, 212);
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   height: 80px;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
 }
 
 img {
@@ -29,8 +29,8 @@ section {
   display: flex;
   flex-direction: column;
   margin: 10px;
-  width: 20%;
   padding: 10px;
+  width: 20%;
 }
 
 .storyline {
