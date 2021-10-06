@@ -1,5 +1,6 @@
 // implement MovieCard component here
 import React from 'react';
+import Rating from './Rating';
 
 export default class MovieCard extends React.Component {
   render() {
