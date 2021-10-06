@@ -1,11 +1,13 @@
 import React from 'react';
-// import movies from '../data'
+import movies from '../data';
+import MovieCard from './MovieCard';
 
 class MovieList extends React.Component {
   render() {
     return (
-      <h1>Teste</h1>
-      // <MovieList movies={ movies } />
+      <div>
+        {movies.map((movie) => <MovieCard key={ movie.title } movies={ movie } />)}
+      </div>
     );
   }
 }
