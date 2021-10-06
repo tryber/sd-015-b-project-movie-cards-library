@@ -5,7 +5,7 @@ class Rating extends React.Component {
   render() {
     const { rating } = this.props;
     return (
-      <h6 className="rating">{ rating }</h6>
+      <div className="rating">{ rating }</div>
     );
   }
 }
@@ -15,7 +15,7 @@ Rating.defaultProps = {
 };
 
 Rating.propTypes = {
-  rating: PropTypes.arrayOf(PropTypes.object),
+  rating: PropTypes.number,
 };
 
 export default Rating;
