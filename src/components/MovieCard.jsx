@@ -6,7 +6,7 @@ class MovieCard extends React.Component {
     const { movie } = this.props;
     return (
       <div>
-        <img src={movie.imagePath} />
+        <img src={ movie.imagePath } alt="Imagem do filme" />
         <h4>{movie.title}</h4>
         <h5>{movie.subtitle}</h5>
         <p>{movie.storyline}</p>
@@ -17,6 +17,7 @@ class MovieCard extends React.Component {
 
 MovieCard.propTypes = {
   movie: PropTypes.shape({
+    imagePath: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
     subtitle: PropTypes.string.isRequired,
     storyline: PropTypes.string.isRequired,
