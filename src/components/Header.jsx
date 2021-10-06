@@ -5,7 +5,7 @@ class Header extends Component {
     return (
       <header className="movie-card-header">
         <h1>Movie Cards Library</h1>
-        <span>📽️</span>
+        <span role="img" aria-label="Projetor">📽️</span>
       </header>
     );
   }
