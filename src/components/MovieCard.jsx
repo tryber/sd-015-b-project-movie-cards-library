@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 
 class MovieCard extends React.Component {
@@ -6,10 +7,13 @@ class MovieCard extends React.Component {
     return (
       <div className="movie-card">
         <img src={ movie.imagePath } alt="movie" className="movie-card-image" />
-        
       </div>
     );
   }
 }
+
+MovieCard.propTypes = {
+  movie: PropTypes.isRequired,
+};
 
 export default MovieCard;
