@@ -30,13 +30,19 @@ body {
   background-color: white;
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 7px;
+  box-shadow: 5px 5px 9px 3px black;
   display: flex;
   flex-direction: column;
   margin: 5px;
   overflow: hidden;
+  transition: transform 0.3s;
   width: 300px;
 }
 
+.movie-card:hover {
+  transform: scale(1.2);
+  transition: 0.3s;
+}
 
 .movie-card-image {
   border-radius: 7px;
