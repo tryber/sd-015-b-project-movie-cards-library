@@ -1,6 +1,6 @@
 // implement MovieCard component here
 import React from 'react';
-import Rating from './Rating';
+// import Rating from './Rating';
 
 class MovieCard extends React.Component {
   render() {
@@ -8,13 +8,13 @@ class MovieCard extends React.Component {
     return (
       <div className="movie-card">
         <section className="movie-card-body">
-          <h4 className="movie-card-title">Title</h4>
-          <h5 className="movie-card-subtitle">Subtitle</h5>
-          <p className="movie-card-storyline">Story Line</p>
-          <img className="movie-card-image" src="{Link}" alt="Teste" />
+          <h4 className="movie-card-title">{ movie.title }</h4>
+          <h5 className="movie-card-subtitle">{ movie.subtitle }</h5>
+          <p className="movie-card-storyline">{ movie.storyline }</p>
+          <img className="movie-card-image" src={ movie.imagePath } alt={ movie.alt } />
         </section>
         <section className="movie-card-rating">
-          Nota
+          { movie.rating }
         </section>
       </div>
     );
