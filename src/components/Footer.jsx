@@ -6,7 +6,7 @@ class Footer extends React.Component {
       <footer className="footer">
         <p>
           Feito por
-          <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/coutinhomarco/">Marco</a>
+          <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/coutinhomarco/">Marco</a>
         </p>
       </footer>
     );
