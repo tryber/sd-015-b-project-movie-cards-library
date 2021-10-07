@@ -3,7 +3,7 @@ import '../App.css';
 
 function Rating({ rating }) {
   return (
-    <div>{ rating }</div>
+    <div className="rating">{ rating }</div>
   );
 }
 
