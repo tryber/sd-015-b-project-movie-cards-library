@@ -2,14 +2,14 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 class Rating extends React.Component {
-  render() {
+  render () {
     return (
-      <span>{ movie.rating } </span>
-    );
+      <p>oi</p>
+    )
   }
 }
 
-Rating.propTypes = {
+Rating.protoType = {
   movie: PropTypes.shape({
     rating: PropTypes.number,
   }).isRequired,
