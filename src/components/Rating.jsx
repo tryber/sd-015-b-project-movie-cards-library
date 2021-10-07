@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 class Rating extends React.Component {
   render() {
     return (
-      <Rating />
+      <span>{ movie.rating } </span>
     );
   }
 }
