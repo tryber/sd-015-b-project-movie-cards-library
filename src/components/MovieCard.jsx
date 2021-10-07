@@ -7,12 +7,14 @@ export default class MovieCard extends React.Component {
   render() {
     const { movie } = this.props;
     return (
-      <section>
-        <h4>{ movie.title }</h4>
-        <h5>{ movie.subtitle }</h5>
-        <img src={ movie.imagePath } alt={ movie.title } />
-        <p>{ movie.storyline }</p>
-        <Rating rating={ movie.rating } />
+      <section className="movie-card">
+        <img src={ movie.imagePath } className="movie-card-image" alt={ movie.title } />
+        <div className="movie-card-body">
+          <h4 className="movie-card-title">{ movie.title }</h4>
+          <h5>{ movie.subtitle }</h5>
+          <p>{ movie.storyline }</p>
+          <Rating rating={ movie.rating } />
+        </div>
       </section>
     );
   }
@@ -22,8 +24,14 @@ MovieCard.propTypes = {
   movie: PropTypes.shape({
     title: PropTypes.string.isRequired,
     subtitle: PropTypes.string.isRequired,
-    rating: PropTypes.number.isRequired,
+    rating: PropTypes.number,
     storyline: PropTypes.string.isRequired,
     imagePath: PropTypes.string.isRequired,
-  }).isRequired,
+  }),
+};
+
+MovieCard.defaultProps = {
+  movie: PropTypes.shape({
+    rating: 0,
+  }),
 };
