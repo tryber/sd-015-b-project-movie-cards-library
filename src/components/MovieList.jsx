@@ -17,7 +17,7 @@ class MovieList extends React.Component {
   }
 }
 
-import PropTypes from 'prop-types';MovieList.propTypes = {
+MovieList.propTypes = {
   movies: PropTypes.arrayOf(
     PropTypes.object,
   ).isRequired,
