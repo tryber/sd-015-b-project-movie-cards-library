@@ -1,12 +1,12 @@
 body {
-  background-color: whitesmoke;
+  background-color: rgba(142, 159, 167, 0.897);
   box-sizing: border-box;
   font-size: 16px;
 }
 
 .movie-card-header {
   align-items: center;
-  background-color: #343a40;
+  background-color: #2c4763;
   display: flex;
   height: 100px;
   justify-content: center;
@@ -26,13 +26,12 @@ body {
 }
 
 .movie-card {
-  background-color: white;
-  border: 1px solid rgba(0, 0, 0, 0.125);
+  background-color: rgb(207, 204, 204);
+  border: 1px solid rgba(40, 203, 214, 0.637);
   border-radius: 3px;
-  display: flex;
-  flex-direction: column;
+  display: inline-block;
   height: 450px;
-  margin: 5px;
+  margin: 50px;
   overflow: hidden;
   width: 300px;
 }
