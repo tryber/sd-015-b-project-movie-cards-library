@@ -13,7 +13,7 @@ function MovieCard({ movie: { title, subtitle, storyline, rating, imagePath } })
         <p className="movie-card-storyline">{ storyline }</p>
       </div>
       <div>
-        <Rating />
+        <Rating rating={ rating } />
       </div>
     </section>
   );
