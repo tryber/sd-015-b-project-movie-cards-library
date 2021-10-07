@@ -5,8 +5,9 @@ import movies from '../data';
 
 class MovieList extends React.Component {
   render() {
+    // const { title, subtitle, storyline, rating } = this.props;
     return (
-      <MovieList movies={ movies } />
+      <span movies={ movies } />
     );
   }
 }
