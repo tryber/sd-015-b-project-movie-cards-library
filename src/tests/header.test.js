@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import { Header } from '../components/Header/index.tsx';
+import Header from '../components/Header/index.tsx';
 
 describe('1 - Crie um componente `<Header />`', () => {
   it('Renderize o componente `<Header />`', () => {

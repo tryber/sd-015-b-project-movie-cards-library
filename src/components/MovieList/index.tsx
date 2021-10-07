@@ -1,6 +1,6 @@
 import React from 'react';
 import './styles.scss';
-import { MovieCard } from '../MovieCard';
+import MovieCard from '../MovieCard';
 
 interface Movie {
     title: string,
@@ -14,7 +14,7 @@ interface MoviesProps {
   movies: Movie[]
 }
 
-export function MovieList(props: MoviesProps) {
+function MovieList(props: MoviesProps) {
   const { movies } = props;
   return (
     <main>
@@ -25,3 +25,5 @@ export function MovieList(props: MoviesProps) {
   )
 
 }
+
+export default MovieList;

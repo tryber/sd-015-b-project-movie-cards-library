@@ -1,6 +1,6 @@
 import React from 'react';
 import './styles.scss';
-import { Rating } from '../Rating';
+import Rating from '../Rating';
 
 interface MovieProps {
   movie: {
@@ -12,7 +12,7 @@ interface MovieProps {
   },
   key: string
 }
-export function MovieCard(props: MovieProps) {
+function MovieCard(props: MovieProps) {
   const { movie } = props;
   return (
     <div className={'card'}>
@@ -26,3 +26,5 @@ export function MovieCard(props: MovieProps) {
     </div>
   )
 }
+
+export default MovieCard;

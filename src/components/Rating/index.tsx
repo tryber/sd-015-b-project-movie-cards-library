@@ -4,6 +4,8 @@ import './styles.scss';
 interface Rating {
   rating: Number;
 }
-export function Rating(props: Rating) {
+function Rating(props: Rating) {
   return <span className= 'rating'>{props.rating}</span>
 }
+
+export default Rating;
