@@ -20,8 +20,8 @@ body {
 }
 
 .movie-list {
-  display: flex;
   background-color: rgb(90, 90, 90);
+  display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
   padding: 90px 30px;
@@ -90,10 +90,10 @@ body {
 }
 
 .footer, .footer a:link, .footer a:visited {
-  bottom: -10%;
   background-color: #343a40;
-  margin-top: 115px;
+  bottom: -10%;
   color: aliceblue;
+  margin-top: 115px;
   padding: 2%;
   text-align: center;
 }
