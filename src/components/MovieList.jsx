@@ -1,15 +1,35 @@
 import React from 'react';
-import movies from '../data';
-// import { v4 as generateId } from 'uuid';
-// import PropTypes  from 'prot-types';
+import { v4 as generateId } from 'uuid';
+import PropTypes from 'prop-types';
+import MovieCard from './MovieCard';
 
-class MovieList extends React.Component {
+export default class MovieList extends React.Component {
   render() {
-    // const { title, subtitle, storyline, rating } = this.props;
+    const { data } = this.props;
     return (
-      <span movies={ movies } />
+      <div>
+        {data.map((movie) => (
+          <MovieCard
+            key={ generateId() }
+            subtitle={ movie.subtitle }
+            imagePath={ movie.imagePath }
+          >
+            { movie.title }
+          </MovieCard>
+        ))}
+      </div>
     );
   }
 }
 
-export default MovieList;
+MovieList.propTypes = {
+  data: PropTypes.arrayOf(PropTypes.shape({
+    title: PropTypes.string.isRequired,
+    subtitle: PropTypes.string.isRequired,
+    imagePath: PropTypes.string,
+  })),
+};
+
+MovieList.defaultProps = {
+  data: 'data',
+};
