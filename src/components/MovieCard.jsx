@@ -7,8 +7,8 @@ class MovieCard extends React.Component {
     return (
       <article>
         <img src={ movie.imagePath } alt={ movie.title } />
-        <h2>{ movie.title }</h2>
-        <h3>{ movie.subtitle }</h3>
+        <h4>{ movie.title }</h4>
+        <h5>{ movie.subtitle }</h5>
         <p>{ movie.storyline }</p>
       </article>
     );
@@ -21,7 +21,6 @@ MovieCard.propTypes = {
     title: PropTypes.string.isRequired,
     subtitle: PropTypes.string.isRequired,
     storyline: PropTypes.string.isRequired,
-
   })
 };
 
