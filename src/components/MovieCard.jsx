@@ -6,6 +6,7 @@ function MovieCard({ movie: { title, imagePath } }) {
     <section>
       <div>
         <img src={ imagePath } alt={ title } />
+        <h4>{ title }</h4>
       </div>
     </section>
   );
