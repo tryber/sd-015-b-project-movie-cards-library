@@ -1,15 +1,18 @@
 body {
-  background-color: whitesmoke;
+  background-color: #6f7477;
   box-sizing: border-box;
   font-size: 16px;
 }
 
 .movie-card-header {
   align-items: center;
-  background-color: #343a40;
+  background-color: #252729;
   display: flex;
-  height: 100px;
+  height: 90px;
   justify-content: center;
+  padding: 5px;
+  position: fixed;
+  width: 100%;
 }
 
 .page-title {
@@ -22,23 +25,27 @@ body {
 .movie-list {
   display: flex;
   flex-flow: row wrap;
-  padding: 48px 30px;
+  padding: 200px 30px;
 }
 
 .movie-card {
-  background-color: white;
+  background-color: #2d3135;
   border: 1px solid rgba(0, 0, 0, 0.125);
-  border-radius: 3px;
+  border-radius: 8px;
+  box-shadow: 3px 3px 10px #0a0a0a9a;
   display: flex;
   flex-direction: column;
   height: 450px;
+  justify-content: space-between;
   margin: 5px;
   overflow: hidden;
+  padding: 20px;
   width: 300px;
 }
 
 
-.movie-card-image {
+.card-img {
+  border-radius: 8px;
   width: 100%;
 }
 
@@ -48,26 +55,35 @@ body {
 }
 
 .movie-card-title {
+  color: white;
   font-size: 24px;
   font-weight: 500;
   margin: 0 0 12px;
+  text-align: center;
 }
 
 .movie-card-subtitle {
-  color: #6c757d;
+  color: #8e959b;
   font-size: 16px;
   font-weight: 500;
   margin: 0 0 8px;
+  text-align: center;
 }
 
 .movie-card-storyline {
+  color: white;
   font-size: 14px;
   text-align: justify;
 }
 
 .rating {
-  background-color: #007bff;
-  border-radius: 25px;
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 3px 9px;
+}
+
+.paragrafo-rating {
   color: white;
   font-size: 16px;
   font-weight: 700;
@@ -75,9 +91,11 @@ body {
 }
 
 .movie-card-rating {
-  background-color: rgba(0, 0, 0, 0.03);
-  border-top: 1px solid rgba(0, 0, 0, 0.125);
+  align-items: center;
+  background-color: #007bff;
+  border-top: 1px solid rgba(255, 255, 255, 0.125);
   display: flex;
-  justify-content: flex-end;
-  padding: 12px 20px;
+  flex-direction: row;
+  height: 30px;
+  justify-content: center;
 }
