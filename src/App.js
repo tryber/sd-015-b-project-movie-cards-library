@@ -2,14 +2,13 @@ import React from 'react';
 import './App.css';
 import Header from './components/Header';
 import MovieList from './components/MovieList';
+import data from './data';
 
 function App() {
   return (
     <div className="App">
-      <Header>
-        The Header Master
-      </Header>
-      <MovieList />
+      <Header />
+      <MovieList movies={ data } />
     </div>
   );
 }
@@ -17,3 +16,4 @@ function App() {
 export default App;
 
 // xd;
+// falta do 11 ao 14;
