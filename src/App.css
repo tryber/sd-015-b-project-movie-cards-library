@@ -79,5 +79,11 @@ body {
   border-top: 1px solid rgba(0, 0, 0, 0.125);
   display: flex;
   justify-content: flex-end;
+  align-items: center;
   padding: 12px 20px;
+}
+
+.movie-card-rating p:nth-child(2) {
+  margin-left: 3px;
+  font-size: 20px;
 }
