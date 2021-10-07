@@ -1,18 +1,21 @@
 import React from 'react';
-// import { v4 as generateId } from 'uuid';
 import PropTypes from 'prop-types';
+import Rating from './Rating';
 
 export default class MovieCard extends React.Component {
   render() {
     const { title, subtitle, storyline, rating, imagePath } = this.props;
     return (
-      <div className="movieCard">
-        <img src={ imagePath } alt={ `${title} Movie` } />
-        <h2>{title}</h2>
-        <h3>{subtitle}</h3>
-        <h4>{storyline}</h4>
-        <span>{rating}</span>
-      </div>
+      <>
+        <div className="movieCard">
+          <img src={ imagePath } alt={ `${title} Movie` } />
+          <h4>{title}</h4>
+          <h5>{subtitle}</h5>
+          <p>{storyline}</p>
+          <span>{rating}</span>
+        </div>
+        <Rating />
+      </>
     );
   }
 }

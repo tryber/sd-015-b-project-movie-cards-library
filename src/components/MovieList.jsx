@@ -1,5 +1,4 @@
 import React from 'react';
-import { v4 as generateId } from 'uuid';
 import PropTypes from 'prop-types';
 import MovieCard from './MovieCard';
 
@@ -10,12 +9,13 @@ export default class MovieList extends React.Component {
       <div>
         {data.map((movie) => (
           <MovieCard
-            key={ generateId() }
+            key={ movie.title }
+            title={ movie.title }
             subtitle={ movie.subtitle }
+            storyline={ movie.storyline }
+            rating={ movie.rating }
             imagePath={ movie.imagePath }
-          >
-            { movie.title }
-          </MovieCard>
+          />
         ))}
       </div>
     );
