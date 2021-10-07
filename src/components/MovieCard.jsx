@@ -1,7 +1,7 @@
 // implement MovieCard component here
 import React from 'react';
 import PropTypes from 'prop-types';
-// import Rating from './Rating';
+import Rating from './Rating';
 
 class MovieCard extends React.Component {
   render() {
@@ -16,7 +16,7 @@ class MovieCard extends React.Component {
           <img className="movie-card-image" src={ imagePath } alt={ title } />
         </section>
         <section className="movie-card-rating">
-          { rating }
+          <Rating rating={ rating }/>
         </section>
       </div>
     );
