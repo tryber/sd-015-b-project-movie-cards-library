@@ -4,7 +4,7 @@ import Rating from './Rating';
 
 export default class MovieCard extends React.Component {
   render() {
-    const { title, subtitle, storyline, rating, imagePath } = this.props;
+    const { movie: { title, subtitle, storyline, rating, imagePath } } = this.props;
     return (
       <>
         <div className="movie-card">
@@ -20,13 +20,11 @@ export default class MovieCard extends React.Component {
 }
 
 MovieCard.propTypes = {
-  title: PropTypes.string.isRequired,
-  subtitle: PropTypes.string.isRequired,
-  storyline: PropTypes.string.isRequired,
-  rating: PropTypes.number.isRequired,
-  imagePath: PropTypes.string,
-};
-
-MovieCard.defaultProps = {
-  imagePath: 'https://spassodourado.com.br/wp-content/uploads/2015/01/default-placeholder.png',
+  movie: PropTypes.shape({
+    title: PropTypes.string.isRequired,
+    subtitle: PropTypes.string.isRequired,
+    storyline: PropTypes.string.isRequired,
+    rating: PropTypes.number.isRequired,
+    imagePath: PropTypes.string,
+  }).isRequired,
 };
