@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 class MovieCard extends React.Component {
   render() {
     const { movie } = this.props;
-    const { title, subtitle, storyline, imagePath, rating} = movie;
+    const { title, subtitle, storyline, imagePath, rating } = movie;
     return (
       <div className="movie-card">
         <section className="movie-card-body">
