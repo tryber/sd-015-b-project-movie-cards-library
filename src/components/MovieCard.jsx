@@ -16,7 +16,6 @@ class MovieCard extends React.Component {
           <img className="movie-card-image" src={ imagePath } alt={ title } />
         </section>
         <Rating rating={ rating } />
-        <p>✰</p>
       </section>
     );
   }
