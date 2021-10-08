@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 class Moviecard extends Component {
   render() {
-    const { movies } = this.props;
+    const { movies } = this.props; console.log(movies)
     return (
       <article>
         <img src={ movies.imagePath } alt={ movies.title } />
@@ -21,7 +21,7 @@ Moviecard.propTypes = {
     subtitle: PropTypes.string.isRequired,
     storyline: PropTypes.string.isRequired,
     rating: PropTypes.number.isRequired,
-  })).isRequired
+  })).isRequired,
 };
 
 export default Moviecard;
