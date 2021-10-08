@@ -1,14 +1,15 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 
 class Moviecard extends Component {
   render() {
+    const { movies } = this.props;
     return (
       <article>
-        <img src={ this.props.imagePath } alt={ this.props.title } />
-        <h4>{ this.props.title }</h4>
-        <h5>{ this.props.subtitle}</h5>
-        <p>{ this.props.storyline }</p>
+        <img src={ movies.imagePath } alt={ movies.title } />
+        <h4>{ movies.title }</h4>
+        <h5>{ movies.subtitle}</h5>
+        <p>{ movies.storyline }</p>
       </article>
     );
   }
