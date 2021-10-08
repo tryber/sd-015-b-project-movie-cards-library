@@ -3,8 +3,8 @@ import React from 'react';
 class MovieCard extends React.Component {
   render() {
     const { movie } = this.props;
-    const { title, subtitle, storyline, rating, imagePath } = movie;
-    
+    // const { title, subtitle, storyline, rating, imagePath } = movie;
+    const { title, subtitle, storyline, imagePath } = movie;
     return (
       <section>
         <div>
@@ -19,5 +19,14 @@ class MovieCard extends React.Component {
     );
   }
 }
+
+MovieCard.propTypes = {
+  movie: PropTypes.shape({
+    title: PropTypes.string,
+    subtitle: PropTypes.string,
+    storyline: PropTypes.string,
+    imagePath: PropTypes.string,
+  }).isRequired,
+};
 
 export default MovieCard;
