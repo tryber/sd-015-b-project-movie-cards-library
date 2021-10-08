@@ -3,8 +3,8 @@ import React from 'react';
 class MovieCard extends React.Component {
   render() {
     return(
-      <div>
-        <span>Renderizado</span>
+      <div className='movie-card'>
+        <img src={this.props.movie.imagePath} alt={this.props.movie.title} />
       </div>
     );
   }
