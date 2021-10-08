@@ -3,20 +3,20 @@ import PropTypes from 'prop-types';
 
 class Moviecard extends Component {
   render() {
-    const { movies } = this.props;
+    const { movie } = this.props;
     return (
       <article>
-        <img src={ movies.imagePath } alt={ movies.title } />
-        <h4>{ movies.title }</h4>
-        <h5>{ movies.subtitle}</h5>
-        <p>{ movies.storyline }</p>
+        <img src={ movie.imagePath } alt={ movie.title } />
+        <h4>{ movie.title }</h4>
+        <h5>{ movie.subtitle}</h5>
+        <p>{ movie.storyline }</p>
       </article>
     );
   }
 }
 
 Moviecard.propTypes = {
-  movies: PropTypes.arrayOf(PropTypes.shape({
+  movie: PropTypes.arrayOf(PropTypes.shape({
     title: PropTypes.string.isRequired,
     subtitle: PropTypes.string.isRequired,
     storyline: PropTypes.string.isRequired,
