@@ -5,7 +5,7 @@ class MovieCard extends React.Component {
   render() {
     // criando uma constante para receber a chave do props
     const { propMovies } = this.props;
-    console.log(propMovies);
+    // console.log(propMovies);
     return (
       <article>
         <img src={ propMovies.imagePath } alt={ propMovies.title } />
