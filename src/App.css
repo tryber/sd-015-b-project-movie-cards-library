@@ -75,9 +75,15 @@ body {
 }
 
 .movie-card-rating {
+  align-items: center;
   background-color: rgba(0, 0, 0, 0.03);
   border-top: 1px solid rgba(0, 0, 0, 0.125);
   display: flex;
   justify-content: flex-end;
   padding: 12px 20px;
+}
+
+.movie-card-rating p:nth-child( 2 ) {
+  font-size: 20px;
+  margin-left: 3px;
 }
