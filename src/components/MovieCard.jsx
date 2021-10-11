@@ -30,4 +30,10 @@ MovieCard.propTypes = {
   }).isRequired,
 };
 
+MovieCard.defaultProps = {
+  movie: PropTypes.shape({
+    rating: 0,
+  })
+};
+
 export default MovieCard;
