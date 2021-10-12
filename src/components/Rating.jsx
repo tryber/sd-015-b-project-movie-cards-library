@@ -8,6 +8,7 @@ class Rating extends React.Component {
       <div>
         <h4>Rating</h4>
         <p>{rating}</p>
+        <p className="rating">{rating}</p>
       </div>
     );
   }
