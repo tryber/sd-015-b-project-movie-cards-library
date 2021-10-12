@@ -3,15 +3,13 @@ import './App.css';
 import Header from './components/Header';
 import MovieList from './components/MovieList';
 import movies from './data';
-import MovieCard from './components/MovieCard';
+// import MovieCard from './components/MovieCard';
 
 function App() {
   return (
     <div className="App">
       <Header />
-      <MovieList>
-        {movies.map((movie) => <MovieCard key={ movie.title } movieProp={ movie } />)}
-      </MovieList>
+      <MovieList movies={ movies } />
     </div>
   );
 }
