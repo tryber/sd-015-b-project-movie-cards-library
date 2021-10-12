@@ -10,8 +10,8 @@ class MovieCard extends React.Component {
     return (
       <article>
         <img src={ objPropEachMovie.imagePath } alt="" />
-        <p>{ objPropEachMovie.title }</p>
-        <p>{ objPropEachMovie.subtitle }</p>
+        <h4>{ objPropEachMovie.title }</h4>
+        <h5>{ objPropEachMovie.subtitle }</h5>
         <p>{ objPropEachMovie.storyline }</p>
         <p>{ objPropEachMovie.rating }</p>
       </article>
