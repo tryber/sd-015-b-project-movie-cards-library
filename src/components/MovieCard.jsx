@@ -5,22 +5,21 @@ import PropTypes from 'prop-types';
 
 class MovieCard extends React.Component {
   render() {
-    const propEachMovie = this.props;
-    const objPropEachMovie = propEachMovie.movies;
+    const { movie } = this.props;
     return (
       <article>
-        <img src={ objPropEachMovie.imagePath } alt="" />
-        <h4>{ objPropEachMovie.title }</h4>
-        <h5>{ objPropEachMovie.subtitle }</h5>
-        <p>{ objPropEachMovie.storyline }</p>
-        <p>{ objPropEachMovie.rating }</p>
+        <img src={ movie.imagePath } alt="" />
+        <h4>{ movie.title }</h4>
+        <h5>{ movie.subtitle }</h5>
+        <p>{ movie.storyline }</p>
+        <p>{ movie.rating }</p>
       </article>
     );
   }
 }
 
 MovieCard.propTypes = {
-  movies: PropTypes.shape({
+  movie: PropTypes.shape({
     title: PropTypes.string,
     subtitle: PropTypes.string,
     storyline: PropTypes.string,
