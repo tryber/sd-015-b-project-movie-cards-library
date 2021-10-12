@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 function Rating({ rating }) {
   return (
-    <p>{rating}</p>
+    <p className="rating">{rating}</p>
   );
 }
 
