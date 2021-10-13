@@ -21,8 +21,9 @@ body {
 
 .movie-list {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: column wrap;
   padding: 48px 30px;
+  width: 400px;
 }
 
 .movie-card {
@@ -86,4 +87,9 @@ header {
   color: bisque;
   background-color: #343a40;
   text-align: center;
+}
+
+img {
+  border-radius: 10px;
+  width: 200px;
 }
