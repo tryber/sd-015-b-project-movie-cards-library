@@ -1,3 +1,6 @@
+// Esqueci de comentar que utilizei o repositorio do denis para os meus estudos de PropTypes
+// Peço perdão pelo vacilo. Repositorio do Denis: https://github.com/tryber/sd-015-b-project-movie-cards-library/pull/2/commits/744e2286ed57b8d28cabd1767298ab1ad7690359
+
 import React from 'react';
 import PropTypes from 'prop-types';
 
