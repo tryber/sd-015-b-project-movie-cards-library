@@ -1,1 +1,12 @@
-// implement MovieCard component here
+import React, { Component } from 'react';
+// import PropTypes from 'prop-types';
+
+class MovieCard extends Component {
+  render() {
+    return (
+      <h1>oi</h1>
+    );
+  }
+}
+
+export default MovieCard;
